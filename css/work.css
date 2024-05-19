@@ -183,6 +183,7 @@
     text-align: center;
   }
   .productsList .card .skills {
-    gap: 8px;
+    justify-content: space-evenly;
+    gap: 0;
   }
 }
