@@ -1,0 +1,128 @@
+:root {
+  --primary: #FFFFFF;
+  --secondary: #F1F1F1;
+  --third: #FAFAFA; 
+  --navLinksColor: #000000;
+  --navActiveColor: #919191;
+  --textPrimary: #3B3B3B;
+  --textSecondary: #5B5B5B;
+  --textThird: #C1C1C1;
+  --textFourth: #E9E9E9;
+  --mobileText: #1E1E1E;
+}
+
+/* blog */
+.blogBG {
+  padding: 120px 0;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+.blogItemWrap {
+  margin-bottom: 80px;
+  transition: 1s ease;
+}
+.blogItemWrap.hideBlogItemWrap {
+  transform: translateY(-100%);
+}
+.blogItems {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.blogItems .blog_title {
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: 3.84px;
+  font-weight: bold;
+  color: var(--textPrimary);  
+}
+
+.blogItemWrap p {
+  color: var(--navActiveColor);
+}
+
+.blogArticles .blogBadge {
+  padding: 4px 12px;
+  border-radius: 16px;
+  background: var(--secondary);
+  color: var(--textPrimary);
+  border: none;
+}
+.blogListWrap {
+  background: var(--third);
+  height: 100%;
+}
+.blogList {
+  list-style: none;
+  text-align: center;  
+  padding: 80px 0;
+  margin: 0;
+}
+
+.blogList li a {
+  display: block;
+  text-decoration: none;
+  color: var(--textSecondary);
+}
+.blogList li:not(:last-of-type) a {
+  margin-bottom: 36px;
+}
+
+.blogList li a.active,
+.blogList li a:hover
+{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--mobileText);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .blogList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 32px;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 20px 0;    
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .blogList li a {
+    white-space: nowrap;
+  }
+  .blogList li:not(:last-of-type) a {
+    margin-bottom: 0;
+  }
+  .stickyTop {
+    position: sticky;    
+    top: 60px !important;
+    z-index: 100;
+  } 
+}
+@media (max-width: 767px) {
+  .blogBG {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .blogItems {
+    margin-bottom: 16px;
+  }
+  .textDot {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+  .stickyTop {    
+    top: 50px !important;    
+  }  
+}

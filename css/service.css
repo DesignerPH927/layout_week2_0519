@@ -1,0 +1,242 @@
+:root {
+  --primary: #FFFFFF;
+  --secondary: #F1F1F1;
+  --third: #FAFAFA; 
+  --navLinksColor: #000000;
+  --navActiveColor: #919191;
+  --textPrimary: #3B3B3B;
+  --textSecondary: #5B5B5B;
+  --textThird: #C1C1C1;
+  --textFourth: #E9E9E9;
+  --mobileText: #1E1E1E;
+}
+
+/* serviceItemsBG */
+.serviceBG {
+  padding: 120px 0;
+}
+
+.serviceSOP {
+  padding: 120px 0;
+  background: linear-gradient(-45deg, var(--mobileText) 50%, var(--navLinksColor) 50%);
+}
+
+.serviceSOPItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+.serviceSOPItem .service_title {
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: 3.84px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.serviceSOPBox {
+  width: 655px;
+  padding: 24px 32px;
+  background: var(--textPrimary);  
+  gap: 32px;
+}
+
+.serviceSOPBox .serviceSOPBox_text h3{
+  color: var(--primary);
+}
+.serviceSOPBox .serviceSOPBox_text p{
+  color: var(--textFourth);
+}
+
+@media (max-width: 767px) {
+  .serviceBG,
+  .serviceSOP
+  {
+    padding: 80px 0;
+  }
+  .serviceSOPItem {
+    margin-bottom: 40px;
+  }
+  .serviceSOPItem .service_title {
+    font-size: 24px;
+    line-height: 28.8px;    
+  }
+  .serviceSOPBox {   
+    gap: 8px;
+    padding: 24px;
+  }
+  
+  .serviceSOPBox .serviceSOPBox_text h3 {    
+    text-align: center;
+  }
+  .serviceSOPBox .serviceSOPBox_text p {
+    font-size: 20px;
+    line-height: 30px;       
+  }
+}
+
+/* price */
+
+.priceBG {
+  padding: 120px 0;
+}
+
+.priceItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+.priceItems .price_title {
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: 3.84px;
+  font-weight: bold;
+  color: var(--textPrimary);
+}
+.cardShadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.priceTitle {
+  font-weight: bold;
+  color: var(--textSecondary);
+  white-space: nowrap;
+}
+.priceText {
+  display: flex;
+  align-items: end;
+  color: var(--mobileText);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .priceBG {
+    padding: 80px 0;
+  }
+  .priceItems {
+    margin-bottom: 40px;
+  }
+  .priceItems .price_title {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}
+
+/* example */
+.exampleBG {
+  padding: 120px 0;
+}
+.exampleItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+.exampleItems .example_title {
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: 3.84px;
+  font-weight: bold;
+  color: var(--textPrimary);
+}
+
+.mb-80 {
+  margin-bottom: 80 !important;
+}
+.exampleBG .card img{
+  border-radius: 8px !important;
+}
+.exampleBG .card p {
+  color: var(--navActiveColor);
+  margin-bottom: 28px;
+}
+.exampleBG .card .skills {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;  
+}
+
+.exampleBG .card .skills li button {
+  border: none;
+  border-radius: 16px;
+  background: var(--secondary);
+  color: var(--textPrimary);  
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .exampleBG {
+    padding: 80px 0;
+  }
+  .exampleItems {
+    margin-bottom: 40px;
+  }
+  .exampleItems .example_title {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}
+
+
+/* questions */
+
+.questionsBG {
+  padding: 120px 0;
+}
+
+.questionsItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+.questionsItems .questions_title {
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: 3.84px;
+  font-weight: bold;
+  color: var(--textPrimary);
+}
+
+.questionsTitle {
+  line-height: 28.8px;
+  color: var(--textPrimary);
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.questionsText {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--textSecondary);
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .questionsBG {
+    padding: 80px 0;
+  }
+  .questionsItems {
+    margin-bottom: 40px;
+  }
+  .questionsItems .questions_title {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .questionsTitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .questionsText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
