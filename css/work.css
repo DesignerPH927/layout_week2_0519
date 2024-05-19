@@ -182,4 +182,7 @@
   .star_description p span {
     text-align: center;
   }
+  .productsList .card .skills {
+    gap: 8px;
+  }
 }

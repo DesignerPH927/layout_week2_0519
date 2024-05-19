@@ -182,6 +182,9 @@
     font-size: 24px;
     line-height: 28.8px;
   }
+  .exampleBG .card .skills {
+    gap: 8px;
+  }
 }
 
 
